@@ -1,6 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -16,12 +19,24 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
+/* Buttons */
+
+.primary_btn {
+  @apply font-ibm-plex font-normal bg-h_primary rounded-lg text-h_text_light hover:bg-h_primary_hover disabled:bg-h_primary_disabled disabled:text-h_text_light_disabled;
+}
+.secondary_btn {
+  @apply font-ibm-plex font-medium bg-h_secondary rounded-lg text-h_text_dark hover:bg-h_secondary_hover disabled:bg-h_secondary_disabled disabled:text-h_text_light_disabled;
+}
+.terciary_btn {
+  @apply font-ibm-plex font-medium bg-transparent rounded-lg text-h_text_dark hover:bg-h_terciary_hover disabled:text-h_text_light_disabled;
+}
+.sm_btn {
+  @apply px-3 py-1;
+}
+.md_btn {
+  @apply px-4 py-2;
+}
+.lg_btn {
+  @apply px-6 py-4;
 }
