@@ -40,3 +40,28 @@
 .lg_btn {
   @apply px-6 py-4;
 }
+
+
+/* Chip */
+
+.chip {
+  @apply font-ibm-plex font-normal px-2 py-1 rounded-3xl w-fit;
+}
+.chip_yellow{
+  @apply bg-h_yellow;
+}
+.chip_blue{
+  @apply bg-h_blue;
+}
+.chip_orange{
+  @apply bg-h_orange;
+}
+.chip_green{
+  @apply bg-h_green;
+}
+.chip_pink{
+  @apply bg-h_pink;
+}
+.chip_white{
+  @apply bg-h_white;
+}
