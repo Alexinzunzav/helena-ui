@@ -23,16 +23,16 @@
 /* Buttons */
 
 .primary_btn {
-  @apply font-ibm-plex font-normal bg-h_primary rounded-lg text-h_text_light hover:bg-h_primary_hover disabled:bg-h_primary_disabled disabled:text-h_text_light_disabled;
+  @apply font-ibm-plex font-normal bg-h_primary rounded-lg text-h_text_light hover:bg-h_primary_hover focus:outline focus:outline-blue-500 focus:outline-offset-4 focus:outline-4 disabled:bg-h_primary_disabled disabled:text-h_text_light_disabled ;
 }
 .secondary_btn {
-  @apply font-ibm-plex font-medium bg-h_secondary rounded-lg text-h_text_dark hover:bg-h_secondary_hover disabled:bg-h_secondary_disabled disabled:text-h_text_light_disabled;
+  @apply font-ibm-plex font-medium bg-h_secondary rounded-lg text-h_text_dark hover:bg-h_secondary_hover disabled:bg-h_secondary_disabled disabled:text-h_text_light_disabled focus:outline focus:outline-blue-500 focus:outline-offset-4 focus:outline-4; 
 }
 .terciary_btn {
-  @apply font-ibm-plex font-medium bg-transparent rounded-lg text-h_text_dark hover:bg-h_terciary_hover disabled:text-h_text_light_disabled;
+  @apply font-ibm-plex font-medium bg-transparent rounded-lg text-h_text_dark hover:bg-h_terciary_hover disabled:text-h_text_light_disabled focus:outline focus:outline-blue-500 focus:outline-offset-4 focus:outline-4;
 }
 .sm_btn {
-  @apply px-3 py-1;
+  @apply px-4 py-1;
 }
 .md_btn {
   @apply px-4 py-2;

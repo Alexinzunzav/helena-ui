@@ -26,7 +26,13 @@ module.exports = {
         h_terciary_hover: '#EBEBEB',
         h_text_light: '#F7F5F2',
         h_text_light_disabled: '#A6A6A6',
-        h_text_dark: '#1F1F21'
+        h_text_dark: '#1F1F21',
+        h_blue: '#ADD8FD',
+        h_orange: '#FEC08C',
+        h_green: '#97DDB3',
+        h_pink: '#F1C0F8',
+        h_yellow: '#FEE375',
+        h_white: '#F7F5F2',
       }
     },
   },

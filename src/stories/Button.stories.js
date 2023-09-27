@@ -1,6 +1,4 @@
-
 import Button from '../components/Button'
-
 
 export default {
     title: "Button",
@@ -15,22 +13,20 @@ export default {
             control: { type: 'radio' },
         },
         state: {
-            options: ['disabled', 'active'],
+            options: ['disabled', 'default'],
             control: { type: 'select' },
         },
     }
 };
 
-
 const Template = args => <Button {...args} /> ;
-
 
 export const Primary = Template.bind({})
 Primary.args = {
     variant: 'primary',
     btnLabel: 'Primary Button',
     size: 'md',
-    state: 'active'
+    state: 'default'
 };
 
 export const Secondary = Template.bind({})
@@ -38,7 +34,7 @@ Secondary.args = {
     variant: 'secondary',
     btnLabel: 'Secondary Button',
     size: 'md',
-    state: 'active'
+    state: 'default'
 };
 
 export const Terciary = Template.bind({})
@@ -46,5 +42,5 @@ Terciary.args = {
     variant: 'terciary',
     btnLabel: 'Terciary Button',
     size: 'md',
-    state: 'active'
+    state: 'default'
 };
