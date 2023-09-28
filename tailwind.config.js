@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      'ibm-plex': ['IBM Plex Sans', 'sans'],
+      'ibm_plex': ['IBM Plex Sans', 'sans'],
     },
     extend: {
       backgroundImage: {

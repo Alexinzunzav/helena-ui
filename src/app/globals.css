@@ -22,13 +22,22 @@
 /* Buttons */
 
 .primary_btn {
-  @apply font-ibm-plex font-normal bg-h_primary rounded-lg text-h_text_light hover:bg-h_primary_hover focus:outline focus:outline-blue-500 focus:outline-offset-4 focus:outline-4 disabled:bg-h_primary_disabled disabled:text-h_text_light_disabled ;
+  @apply font-ibm_plex font-normal bg-h_primary rounded-lg text-h_text_light 
+  hover:bg-h_primary_hover 
+  focus:outline focus:outline-blue-500 focus:outline-4 
+  disabled:bg-h_primary_disabled disabled:text-h_text_light_disabled ;
 }
 .secondary_btn {
-  @apply font-ibm-plex font-medium bg-h_secondary rounded-lg text-h_text_dark hover:bg-h_secondary_hover disabled:bg-h_secondary_disabled disabled:text-h_text_light_disabled focus:outline focus:outline-blue-500 focus:outline-offset-4 focus:outline-4; 
+  @apply font-ibm_plex font-medium bg-h_secondary rounded-lg text-h_text_dark 
+  hover:bg-h_secondary_hover 
+  disabled:bg-h_secondary_disabled disabled:text-h_text_light_disabled 
+  focus:outline focus:outline-blue-500 focus:outline-4; 
 }
 .terciary_btn {
-  @apply font-ibm-plex font-medium bg-transparent rounded-lg text-h_text_dark hover:bg-h_terciary_hover disabled:text-h_text_light_disabled focus:outline focus:outline-blue-500 focus:outline-offset-4 focus:outline-4;
+  @apply font-ibm_plex font-medium bg-transparent rounded-lg text-h_text_dark 
+  hover:bg-h_terciary_hover 
+  disabled:text-h_text_light_disabled 
+  focus:outline focus:outline-blue-500 focus:outline-4;
 }
 .sm_btn {
   @apply px-4 py-1;
@@ -44,7 +53,7 @@
 /* Chip */
 
 .chip {
-  @apply font-ibm-plex font-normal px-2 py-1 rounded-3xl w-fit;
+  @apply font-ibm_plex font-normal  text-h_text_dark px-2 py-1 rounded-3xl w-fit;
 }
 .chip_yellow{
   @apply bg-h_yellow;
@@ -63,4 +72,47 @@
 }
 .chip_white{
   @apply bg-h_white;
+}
+
+
+
+/* Text Input */
+
+.input_container {
+  @apply flex flex-col gap-1.5;
+}
+
+.input_label {
+  @apply font-ibm_plex font-medium text-h_text_dark;
+}
+.input {
+  @apply font-ibm_plex text-h_text_dark bg-neutral-200 rounded-lg 
+  active:outline active:outline-blue-500 active:outline-offset-0
+  focus:outline focus:outline-blue-500 focus:outline-4
+  disabled:bg-neutral-100; 
+}
+.sm_label {
+  @apply text-sm;
+}
+.md_label {
+  @apply text-base;
+}
+.lg_label {
+  @apply text-lg;
+}
+.input::placeholder {
+  @apply font-ibm_plex
+  disabled:text-neutral-300;
+}
+.input_helpText {
+  @apply font-ibm_plex font-normal text-xs text-neutral-600;
+}
+.sm_input {
+  @apply px-4 py-1.5;
+}
+.md_input {
+  @apply px-4 py-3;
+}
+.lg_input {
+  @apply px-6 py-4;
 }
