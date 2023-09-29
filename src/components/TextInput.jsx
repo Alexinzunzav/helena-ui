@@ -6,12 +6,10 @@ export default function TextInput({ labelText, placeholderText, helpText, id, na
 
      //Set the size class for inputs
     const textInputSizeClass = size === 'sm' ? 'sm_input sm_label' : size === 'lg' ? 'lg_input lg_label' : 'md_input md_label';
-
     const textInputClass = `input ${textInputSizeClass}`;
-
-    const [isDisabled, setIsDisabled] = useState(false);
     
-
+    //Enable disable state to the button
+    const [isDisabled, setIsDisabled] = useState(false);
     useEffect(() => {
         {state === 'disabled' ? setIsDisabled(true) : setIsDisabled(false)}
     }, [state]);

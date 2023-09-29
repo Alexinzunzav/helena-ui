@@ -11,7 +11,7 @@ export default function Button({ btnLabel, variant, size, state }) {
     //Assign the hierarchy class to buttons and incorporate it with the size class
     const btnClass = `${btnSizeClass} ${variant === 'primary' ? 'primary_btn' : variant === 'secondary' ? 'secondary_btn' : 'terciary_btn'}`;
     
-    //
+    //Enable disable state to the button
     const [isDisabled, setIsDisabled] = useState(false);
 
     useEffect(() => {
